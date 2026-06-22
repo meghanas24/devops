@@ -1,2 +1,33 @@
 hello github
 Second Line Added
+sudo apt update
+sudo apt install git -y
+
+git config --global user.name "Meghana"
+git config --global user.email "your_email@gmail.com"
+
+mkdir devops
+cd devops
+
+git init
+
+echo "Hello GitHub" > file1.txt
+echo "This is DevOps Lab" > file2.txt
+
+git add .
+git commit -m "First Commit"
+
+git branch -M main
+
+git remote add origin https://github.com/meghanas24/devops.git
+
+git push -u origin main
+
+echo "Second Line Added" >> file1.txt
+
+git add .
+git commit -m "Updated file1"
+
+git push
+
+git pull origin main
